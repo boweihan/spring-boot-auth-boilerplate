@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class hello.HelloControllerIT</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class hello.HelloControllerIT</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/hello.html">hello</a> &gt; HelloControllerIT</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.160s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getHello</td>
+<td>0.160s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>17:32:27.877 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class hello.HelloControllerIT]
+17:32:27.881 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+17:32:27.887 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+17:32:27.898 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [hello.HelloControllerIT] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+17:32:27.908 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [hello.HelloControllerIT], using SpringBootContextLoader
+17:32:27.910 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [hello.HelloControllerIT]: class path resource [hello/HelloControllerIT-context.xml] does not exist
+17:32:27.911 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [hello.HelloControllerIT]: class path resource [hello/HelloControllerITContext.groovy] does not exist
+17:32:27.911 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [hello.HelloControllerIT]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:32:27.911 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [hello.HelloControllerIT]: HelloControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:32:27.938 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [hello.HelloControllerIT]
+17:32:27.945 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemProperties' with lowest search precedence
+17:32:27.945 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemEnvironment' with lowest search precedence
+17:32:27.946 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [MapPropertySource@30674811 {name='systemProperties', properties={java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib, java.vm.version=25.101-b13, gopherProxySet=false, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, sun.java.launcher=SUN_STANDARD, user.country=US, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/Users/bowei/Documents/Development/bsa/bsa-server, java.runtime.version=1.8.0_101-b13, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/endorsed, os.arch=x86_64, java.io.tmpdir=/var/folders/3h/2f91h1711v7gpdy8gqt4j4_00000gn/T/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Mac OS X, sun.jnu.encoding=UTF-8, java.library.path=/Users/bowei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.11.6, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, user.home=/Users/bowei, user.timezone=America/Toronto, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, java.class.path=/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/test:/Users/bowei/Documents/Development/bsa/bsa-server/build/resources/test:/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/main:/Users/bowei/Documents/Development/bsa/bsa-server/build/resources/main:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/1.5.7.RELEASE/a862305be8b7512a41f6768d825ed37251ccbbe0/spring-boot-starter-web-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jetty/1.5.7.RELEASE/a2864d0a6cd7fff55fb27b66933c26544b3bfaf4/spring-boot-starter-jetty-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-actuator/1.5.7.RELEASE/c8058080955524edbbacda602f25d1c5fdf2a3a9/spring-boot-starter-actuator-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/1.5.7.RELEASE/d23f37a72c2d4e46aba66bc69a649213f9cadeee/spring-boot-starter-test-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/1.5.7.RELEASE/b42fe6962dd8b3be4ac8c1d7134d0ca2d0a35c7e/spring-boot-starter-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.3.5.Final/622a9bcef2eed6d41b5b8e0662c36212009e375/hibernate-validator-5.3.5.Final.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.10/f7b83cb2bc4b88d53961e749e1ad32f49ef017b7/jackson-databind-2.8.10.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.11.RELEASE/50a3dfce550bdf9459dfb2c6282aa104b040258e/spring-web-4.3.11.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.11.RELEASE/814f91ec4dc324e724bbe7cbc5045b234604c539/spring-webmvc-4.3.11.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlets/9.4.6.v20170531/5adddf5a90f8be30eadf5ca92ae6ac5ffdab54c3/jetty-servlets-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-webapp/9.4.6.v20170531/3e64618f88061ecd5538e6092f44e7410609e41c/jetty-webapp-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-server/9.4.6.v20170531/3df260d52e941345ad40498bb23307ec3e9c2683/websocket-server-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/javax-websocket-server-impl/9.4.6.v20170531/df28c3f3347bca9425811843196cebae3e66ce20/javax-websocket-server-impl-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.mortbay.jasper/apache-el/8.0.33/1b8fa2179b3937cada939317bb135815e79c0ac2/apache-el-8.0.33.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator/1.5.7.RELEASE/ff3124e2359be5e6c0d9cc501bf214413a329fee/spring-boot-actuator-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/1.5.7.RELEASE/b8d77445d48f4320f404d8f13f4e5cb95bc36b30/spring-boot-test-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/1.5.7.RELEASE/8bead16b97c9f1b5fe7c47f3e030dd9351a6974d/spring-boot-test-autoconfigure-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.2.0/22290d17944bd239fabf5ac69005a60a7ecbbbcb/json-path-2.2.0.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/2.6.0/b532c3fc4f66bcfee4989a3514f1cd56203a33ad/assertj-core-2.6.0.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/1.10.19/e8546f5bef4e061d8dd73895b4e8f40e3fe6effe/mockito-core-1.10.19.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.3/4785a3c21320980282f9f33d0d1264a69040538f/hamcrest-library-1.3.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.4.0/9cdbb373a06f6513e51e8c545ee6a5e981463edb/jsonassert-1.4.0.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.11.RELEASE/eb30ed093f628279d3aead068fd478fa343f1dad/spring-core-4.3.11.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/4.3.11.RELEASE/cf765b5d6d6bdc38c67522ecae3fe9549da43e1/spring-test-4.3.11.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.7.RELEASE/1006870df7b3dc203df7ce84463c5dd7049fdaa4/spring-boot-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.5.7.RELEASE/e83f1407ff991e9e7eb156f49fa19d868bb73289/spring-boot-autoconfigure-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.5.7.RELEASE/c84c4ea09d7f789a0d5e936a961471e5dbd9295e/spring-boot-starter-logging-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.17/7a27ea250c5130b2922b86dea63cbb1cc10a660c/snakeyaml-1.17.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.1.Final/c46217ab74b532568c0ed31dc599db3048bd1b67/jboss-logging-3.3.1.Final.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.4/3d5f48f10bbe4eb7bd862f10c0583be2e0053c6/classmate-1.3.4.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/45b426f7796b741035581a176744d91090e2e6fb/jackson-annotations-2.8.0.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.10/eb21a035c66ad307e66ec8fce37f5d50fd62d039/jackson-core-2.8.10.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.3.11.RELEASE/461d0bb58f1de30203d9331adf4b51de9554de5a/spring-aop-4.3.11.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.11.RELEASE/591cc35fd39292adae13f01aa13e978d0bb11936/spring-beans-4.3.11.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.11.RELEASE/3efec2d7c7469d49108a2b21c3f15831f7297569/spring-context-4.3.11.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.3.11.RELEASE/fca662a2fccdad90ec22b2aaecb021047dcbe249/spring-expression-4.3.11.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-continuation/9.4.6.v20170531/7a3e4ec4d2b7d629707d8e3107bb5ee31f7d2158/jetty-continuation-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.4.6.v20170531/6c2dd034fc4128ea65f2d0199473cbfb80aeb428/jetty-http-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.6.v20170531/78628ec5cfafbb5b8085342322515c65fadfa1cc/jetty-util-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.6.v20170531/69cdaaac75739eff9ccb4c61f87e4fa3ba280f9/jetty-io-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-xml/9.4.6.v20170531/25818a656163364b89966fbfdc6f43a8d8b65d2a/jetty-xml-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.4.6.v20170531/7d302b454433ee1b9799761c23d0323542f2525b/jetty-servlet-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-common/9.4.6.v20170531/32ddd92bdb1b9351369b32d770667706c1a7fb67/websocket-common-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-client/9.4.6.v20170531/7abf96c2a2afa5966fea35375fc0280e1365b8eb/websocket-client-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-servlet/9.4.6.v20170531/6f4f1a91e61cc15060ea0beecc7a5d035c1d65f6/websocket-servlet-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-annotations/9.4.6.v20170531/6ccc93bb46c6014c7b383efeb14c1233ecb081d9/jetty-annotations-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/javax-websocket-client-impl/9.4.6.v20170531/89157efdf0a2d305276b622e51722275eff28060/javax-websocket-client-impl-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/javax.websocket/javax.websocket-api/1.0/fc843b649d4a1dcb0497669d262befa3918c7ba8/javax.websocket-api-1.0.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.2.1/5b9e5df7a62d1279b70dc882b041d249c4f0b002/json-smart-2.2.1.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.1/87c0ea803b69252868d09308b4618f766f135a96/objenesis-2.1.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.11/ccedfbacef4a6515d2983e3f89ed753d5d4fb665/logback-classic-1.1.11.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.25/f8c32b13ff142a513eeb5b6330b1588dcb2c0461/jcl-over-slf4j-1.7.25.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.25/af5364cd6679bfffb114f0dec8a157aaa283b76/jul-to-slf4j-1.7.25.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.25/a87bb47468f47ee7aabbd54f93e133d4215769c3/log4j-over-slf4j-1.7.25.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.4.6.v20170531/6c4cdac99130d887abc6fa6645adcd033f763d02/jetty-security-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-api/9.4.6.v20170531/67e88613850da0aa0874e9b6bc2d7dd812968346/websocket-api-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-client/9.4.6.v20170531/ec4139632f338738124e1d77824e3b73be1c6f5f/jetty-client-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-plus/9.4.6.v20170531/8b6922eb2746ffe801457d400de9e99e21c491b5/jetty-plus-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/479c1e06db31c432330183f5cae684163f186146/javax.annotation-api-1.2.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.1/5ef31c4fe953b1fd00b8a88fa1d6820e8785bb45/asm-5.1.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/5.1/25d8a575034dd9cfcb375a39b5334f0ba9c8474e/asm-commons-5.1.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/1.1/a527213f2fea112a04c9bdf0ec0264e34104cd08/accessors-smart-1.1.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.11/88b8df40340eed549fb07e2613879bf6b006704d/logback-core-1.1.11.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.6.v20170531/afda653f00267fb8b501cafd1cf5cdd1615602a2/jetty-server-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/5.1/87b38c12a0ea645791ead9d3e74ae5268d1d6c34/asm-tree-5.1.jar, user.name=bowei, java.vm.specification.version=1.8, sun.java.command=jarjar.org.gradle.process.internal.launcher.GradleWorkerMain 'Gradle Test Executor 1', java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre, sun.arch.data.model=64, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.vm.info=mixed mode, java.version=1.8.0_101, java.ext.dirs=/Users/bowei/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/classes, java.vendor=Oracle Corporation, org.gradle.test.worker=1, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeBig, sun.cpu.endian=little, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, sun.cpu.isalist=}}, SystemEnvironmentPropertySource@156071774 {name='systemEnvironment', properties={PATH=/opt/apache-maven-3.3.9/bin:/Users/bowei/.rbenv/shims:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin, vcsinfo=master, JAVA_MAIN_CLASS_11523=org.gradle.wrapper.GradleWrapperMain, JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home, APP_ICON_11523=/Users/bowei/Documents/Development/bsa/bsa-server/media/gradle.icns, TERM=xterm-256color, RBENV_SHELL=bash, LANG=en_CA.UTF-8, LOGNAME=bowei, PROMPT_COMMAND=prompt_command, TERM_PROGRAM_VERSION=361.1, PWD=/Users/bowei/Documents/Development/bsa/bsa-server, XPC_SERVICE_NAME=0, SHELL=/bin/bash, TERM_PROGRAM=Apple_Terminal, JAVA_MAIN_CLASS_11534=jarjar.org.gradle.process.internal.launcher.GradleWorkerMain, LSCOLORS=ExFxBxBxCxegedabagacad, OLDPWD=/Users/bowei/Documents/Development/bsa/bsa-server, CLICOLOR=1, USER=bowei, TMPDIR=/var/folders/3h/2f91h1711v7gpdy8gqt4j4_00000gn/T/, SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.ZHUaiOWGtl/Listeners, XPC_FLAGS=0x0, APP_NAME_11523=Gradle, TERM_SESSION_ID=B6654D41-193F-46D6-B405-7EEF39C4182C, __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0, Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.npHBWSC9x0/Render, HOME=/Users/bowei, SHLVL=1}}]
+17:32:27.956 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [hello/] to resources [URL [file:/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/test/hello/], URL [file:/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/main/hello/]]
+17:32:27.956 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/test/hello]
+17:32:27.956 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/test/hello] for files matching pattern [/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/test/hello/*.class]
+17:32:27.959 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/main/hello]
+17:32:27.959 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/main/hello] for files matching pattern [/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/main/hello/*.class]
+17:32:27.959 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:hello/*.class] to resources [file [/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/test/hello/HelloControllerIT.class], file [/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/test/hello/HelloControllerTest.class], file [/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/main/hello/Application.class], file [/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/main/hello/HelloController.class]]
+17:32:28.004 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/main/hello/Application.class]
+17:32:28.009 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration hello.Application for test class hello.HelloControllerIT
+17:32:28.011 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [hello.HelloControllerIT]: using defaults.
+17:32:28.015 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+17:32:28.025 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+17:32:28.026 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+17:32:28.026 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6f3062e6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1f9a21d9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@41e61be, org.springframework.test.context.support.DirtiesContextTestExecutionListener@681ed1c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6a4a8878, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2490f801, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@53f47ebc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5a9490d3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@64a3cab1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@475076d4]
+17:32:28.029 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [hello.HelloControllerIT]
+17:32:28.029 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [hello.HelloControllerIT]
+17:32:28.029 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [hello.HelloControllerIT]
+17:32:28.029 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [hello.HelloControllerIT]
+17:32:28.033 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4c7e235f testClass = HelloControllerIT, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15040b88 testClass = HelloControllerIT, locations = '{}', classes = '{class hello.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@48c5ba17, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@50abe44d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2bdfa76b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3562ff39], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+17:32:28.033 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [hello.HelloControllerIT]
+17:32:28.033 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [hello.HelloControllerIT]
+17:32:28.034 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@4c7e235f testClass = HelloControllerIT, testInstance = hello.HelloControllerIT@14da0f7b, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15040b88 testClass = HelloControllerIT, locations = '{}', classes = '{class hello.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@48c5ba17, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@50abe44d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2bdfa76b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3562ff39], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+17:32:28.078 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemProperties' with lowest search precedence
+17:32:28.079 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemEnvironment' with lowest search precedence
+17:32:28.079 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [MapPropertySource@1963684252 {name='systemProperties', properties={java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib, java.vm.version=25.101-b13, gopherProxySet=false, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, sun.java.launcher=SUN_STANDARD, user.country=US, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/Users/bowei/Documents/Development/bsa/bsa-server, java.runtime.version=1.8.0_101-b13, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/endorsed, os.arch=x86_64, java.io.tmpdir=/var/folders/3h/2f91h1711v7gpdy8gqt4j4_00000gn/T/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Mac OS X, sun.jnu.encoding=UTF-8, java.library.path=/Users/bowei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.11.6, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, user.home=/Users/bowei, user.timezone=America/Toronto, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, java.class.path=/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/test:/Users/bowei/Documents/Development/bsa/bsa-server/build/resources/test:/Users/bowei/Documents/Development/bsa/bsa-server/build/classes/main:/Users/bowei/Documents/Development/bsa/bsa-server/build/resources/main:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/1.5.7.RELEASE/a862305be8b7512a41f6768d825ed37251ccbbe0/spring-boot-starter-web-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jetty/1.5.7.RELEASE/a2864d0a6cd7fff55fb27b66933c26544b3bfaf4/spring-boot-starter-jetty-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-actuator/1.5.7.RELEASE/c8058080955524edbbacda602f25d1c5fdf2a3a9/spring-boot-starter-actuator-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/1.5.7.RELEASE/d23f37a72c2d4e46aba66bc69a649213f9cadeee/spring-boot-starter-test-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/1.5.7.RELEASE/b42fe6962dd8b3be4ac8c1d7134d0ca2d0a35c7e/spring-boot-starter-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.3.5.Final/622a9bcef2eed6d41b5b8e0662c36212009e375/hibernate-validator-5.3.5.Final.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.10/f7b83cb2bc4b88d53961e749e1ad32f49ef017b7/jackson-databind-2.8.10.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.11.RELEASE/50a3dfce550bdf9459dfb2c6282aa104b040258e/spring-web-4.3.11.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.11.RELEASE/814f91ec4dc324e724bbe7cbc5045b234604c539/spring-webmvc-4.3.11.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlets/9.4.6.v20170531/5adddf5a90f8be30eadf5ca92ae6ac5ffdab54c3/jetty-servlets-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-webapp/9.4.6.v20170531/3e64618f88061ecd5538e6092f44e7410609e41c/jetty-webapp-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-server/9.4.6.v20170531/3df260d52e941345ad40498bb23307ec3e9c2683/websocket-server-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/javax-websocket-server-impl/9.4.6.v20170531/df28c3f3347bca9425811843196cebae3e66ce20/javax-websocket-server-impl-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.mortbay.jasper/apache-el/8.0.33/1b8fa2179b3937cada939317bb135815e79c0ac2/apache-el-8.0.33.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator/1.5.7.RELEASE/ff3124e2359be5e6c0d9cc501bf214413a329fee/spring-boot-actuator-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/1.5.7.RELEASE/b8d77445d48f4320f404d8f13f4e5cb95bc36b30/spring-boot-test-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/1.5.7.RELEASE/8bead16b97c9f1b5fe7c47f3e030dd9351a6974d/spring-boot-test-autoconfigure-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.2.0/22290d17944bd239fabf5ac69005a60a7ecbbbcb/json-path-2.2.0.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/2.6.0/b532c3fc4f66bcfee4989a3514f1cd56203a33ad/assertj-core-2.6.0.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/1.10.19/e8546f5bef4e061d8dd73895b4e8f40e3fe6effe/mockito-core-1.10.19.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.3/4785a3c21320980282f9f33d0d1264a69040538f/hamcrest-library-1.3.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.4.0/9cdbb373a06f6513e51e8c545ee6a5e981463edb/jsonassert-1.4.0.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.11.RELEASE/eb30ed093f628279d3aead068fd478fa343f1dad/spring-core-4.3.11.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/4.3.11.RELEASE/cf765b5d6d6bdc38c67522ecae3fe9549da43e1/spring-test-4.3.11.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.7.RELEASE/1006870df7b3dc203df7ce84463c5dd7049fdaa4/spring-boot-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.5.7.RELEASE/e83f1407ff991e9e7eb156f49fa19d868bb73289/spring-boot-autoconfigure-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.5.7.RELEASE/c84c4ea09d7f789a0d5e936a961471e5dbd9295e/spring-boot-starter-logging-1.5.7.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.17/7a27ea250c5130b2922b86dea63cbb1cc10a660c/snakeyaml-1.17.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.1.Final/c46217ab74b532568c0ed31dc599db3048bd1b67/jboss-logging-3.3.1.Final.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.4/3d5f48f10bbe4eb7bd862f10c0583be2e0053c6/classmate-1.3.4.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/45b426f7796b741035581a176744d91090e2e6fb/jackson-annotations-2.8.0.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.10/eb21a035c66ad307e66ec8fce37f5d50fd62d039/jackson-core-2.8.10.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.3.11.RELEASE/461d0bb58f1de30203d9331adf4b51de9554de5a/spring-aop-4.3.11.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.11.RELEASE/591cc35fd39292adae13f01aa13e978d0bb11936/spring-beans-4.3.11.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.11.RELEASE/3efec2d7c7469d49108a2b21c3f15831f7297569/spring-context-4.3.11.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.3.11.RELEASE/fca662a2fccdad90ec22b2aaecb021047dcbe249/spring-expression-4.3.11.RELEASE.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-continuation/9.4.6.v20170531/7a3e4ec4d2b7d629707d8e3107bb5ee31f7d2158/jetty-continuation-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.4.6.v20170531/6c2dd034fc4128ea65f2d0199473cbfb80aeb428/jetty-http-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.6.v20170531/78628ec5cfafbb5b8085342322515c65fadfa1cc/jetty-util-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.6.v20170531/69cdaaac75739eff9ccb4c61f87e4fa3ba280f9/jetty-io-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-xml/9.4.6.v20170531/25818a656163364b89966fbfdc6f43a8d8b65d2a/jetty-xml-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.4.6.v20170531/7d302b454433ee1b9799761c23d0323542f2525b/jetty-servlet-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-common/9.4.6.v20170531/32ddd92bdb1b9351369b32d770667706c1a7fb67/websocket-common-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-client/9.4.6.v20170531/7abf96c2a2afa5966fea35375fc0280e1365b8eb/websocket-client-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-servlet/9.4.6.v20170531/6f4f1a91e61cc15060ea0beecc7a5d035c1d65f6/websocket-servlet-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-annotations/9.4.6.v20170531/6ccc93bb46c6014c7b383efeb14c1233ecb081d9/jetty-annotations-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/javax-websocket-client-impl/9.4.6.v20170531/89157efdf0a2d305276b622e51722275eff28060/javax-websocket-client-impl-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/javax.websocket/javax.websocket-api/1.0/fc843b649d4a1dcb0497669d262befa3918c7ba8/javax.websocket-api-1.0.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.2.1/5b9e5df7a62d1279b70dc882b041d249c4f0b002/json-smart-2.2.1.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.1/87c0ea803b69252868d09308b4618f766f135a96/objenesis-2.1.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.11/ccedfbacef4a6515d2983e3f89ed753d5d4fb665/logback-classic-1.1.11.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.25/f8c32b13ff142a513eeb5b6330b1588dcb2c0461/jcl-over-slf4j-1.7.25.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.25/af5364cd6679bfffb114f0dec8a157aaa283b76/jul-to-slf4j-1.7.25.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.25/a87bb47468f47ee7aabbd54f93e133d4215769c3/log4j-over-slf4j-1.7.25.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.4.6.v20170531/6c4cdac99130d887abc6fa6645adcd033f763d02/jetty-security-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-api/9.4.6.v20170531/67e88613850da0aa0874e9b6bc2d7dd812968346/websocket-api-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-client/9.4.6.v20170531/ec4139632f338738124e1d77824e3b73be1c6f5f/jetty-client-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-plus/9.4.6.v20170531/8b6922eb2746ffe801457d400de9e99e21c491b5/jetty-plus-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/479c1e06db31c432330183f5cae684163f186146/javax.annotation-api-1.2.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.1/5ef31c4fe953b1fd00b8a88fa1d6820e8785bb45/asm-5.1.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/5.1/25d8a575034dd9cfcb375a39b5334f0ba9c8474e/asm-commons-5.1.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/1.1/a527213f2fea112a04c9bdf0ec0264e34104cd08/accessors-smart-1.1.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.11/88b8df40340eed549fb07e2613879bf6b006704d/logback-core-1.1.11.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.6.v20170531/afda653f00267fb8b501cafd1cf5cdd1615602a2/jetty-server-9.4.6.v20170531.jar:/Users/bowei/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/5.1/87b38c12a0ea645791ead9d3e74ae5268d1d6c34/asm-tree-5.1.jar, user.name=bowei, java.vm.specification.version=1.8, sun.java.command=jarjar.org.gradle.process.internal.launcher.GradleWorkerMain 'Gradle Test Executor 1', java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre, sun.arch.data.model=64, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.vm.info=mixed mode, java.version=1.8.0_101, java.ext.dirs=/Users/bowei/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/classes, java.vendor=Oracle Corporation, org.gradle.test.worker=1, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeBig, sun.cpu.endian=little, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, sun.cpu.isalist=}}, SystemEnvironmentPropertySource@1072203876 {name='systemEnvironment', properties={PATH=/opt/apache-maven-3.3.9/bin:/Users/bowei/.rbenv/shims:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin, vcsinfo=master, JAVA_MAIN_CLASS_11523=org.gradle.wrapper.GradleWrapperMain, JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home, APP_ICON_11523=/Users/bowei/Documents/Development/bsa/bsa-server/media/gradle.icns, TERM=xterm-256color, RBENV_SHELL=bash, LANG=en_CA.UTF-8, LOGNAME=bowei, PROMPT_COMMAND=prompt_command, TERM_PROGRAM_VERSION=361.1, PWD=/Users/bowei/Documents/Development/bsa/bsa-server, XPC_SERVICE_NAME=0, SHELL=/bin/bash, TERM_PROGRAM=Apple_Terminal, JAVA_MAIN_CLASS_11534=jarjar.org.gradle.process.internal.launcher.GradleWorkerMain, LSCOLORS=ExFxBxBxCxegedabagacad, OLDPWD=/Users/bowei/Documents/Development/bsa/bsa-server, CLICOLOR=1, USER=bowei, TMPDIR=/var/folders/3h/2f91h1711v7gpdy8gqt4j4_00000gn/T/, SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.ZHUaiOWGtl/Listeners, XPC_FLAGS=0x0, APP_NAME_11523=Gradle, TERM_SESSION_ID=B6654D41-193F-46D6-B405-7EEF39C4182C, __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0, Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.npHBWSC9x0/Render, HOME=/Users/bowei, SHLVL=1}}]
+17:32:28.080 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+17:32:28.081 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'Inlined Test Properties' with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.7.RELEASE)
+
+2017-09-16 17:32:28.291  INFO 11534 --- [    Test worker] hello.HelloControllerIT                  : Starting HelloControllerIT on Boweis-MacBook-Pro.local with PID 11534 (started by bowei in /Users/bowei/Documents/Development/bsa/bsa-server)
+2017-09-16 17:32:28.291  INFO 11534 --- [    Test worker] hello.HelloControllerIT                  : No active profile set, falling back to default profiles: default
+2017-09-16 17:32:28.312  INFO 11534 --- [    Test worker] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3713bcc1: startup date [Sat Sep 16 17:32:28 EDT 2017]; root of context hierarchy
+2017-09-16 17:32:29.188  INFO 11534 --- [    Test worker] org.eclipse.jetty.util.log               : Logging initialized @1808ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-16 17:32:29.253  INFO 11534 --- [    Test worker] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 0
+2017-09-16 17:32:29.255  INFO 11534 --- [    Test worker] org.eclipse.jetty.server.Server          : jetty-9.4.6.v20170531
+2017-09-16 17:32:29.353  INFO 11534 --- [    Test worker] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2017-09-16 17:32:29.353  INFO 11534 --- [    Test worker] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2017-09-16 17:32:29.355  INFO 11534 --- [    Test worker] org.eclipse.jetty.server.session         : Scavenging every 600000ms
+2017-09-16 17:32:29.358  INFO 11534 --- [    Test worker] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2017-09-16 17:32:29.358  INFO 11534 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1049 ms
+2017-09-16 17:32:29.505  INFO 11534 --- [    Test worker] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-16 17:32:29.507  INFO 11534 --- [    Test worker] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2017-09-16 17:32:29.507  INFO 11534 --- [    Test worker] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-16 17:32:29.507  INFO 11534 --- [    Test worker] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-16 17:32:29.507  INFO 11534 --- [    Test worker] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-16 17:32:29.507  INFO 11534 --- [    Test worker] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-16 17:32:29.508  INFO 11534 --- [    Test worker] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-09-16 17:32:29.508  INFO 11534 --- [    Test worker] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-09-16 17:32:29.511  INFO 11534 --- [    Test worker] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@351dce39{/,[file:///private/var/folders/3h/2f91h1711v7gpdy8gqt4j4_00000gn/T/jetty-docbase.1697562647250277102.0/],AVAILABLE}
+2017-09-16 17:32:29.512  INFO 11534 --- [    Test worker] org.eclipse.jetty.server.Server          : Started @2133ms
+2017-09-16 17:32:29.783  INFO 11534 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3713bcc1: startup date [Sat Sep 16 17:32:28 EDT 2017]; root of context hierarchy
+2017-09-16 17:32:29.829  INFO 11534 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/]}&quot; onto public java.lang.String hello.HelloController.index()
+2017-09-16 17:32:29.831  INFO 11534 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-16 17:32:29.832  INFO 11534 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-16 17:32:29.857  INFO 11534 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-16 17:32:29.857  INFO 11534 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-16 17:32:29.884  INFO 11534 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-16 17:32:30.037  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2017-09-16 17:32:30.039  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2017-09-16 17:32:30.039  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map&lt;java.lang.String, java.lang.String&gt;)
+2017-09-16 17:32:30.039  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:30.040  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}&quot; onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-09-16 17:32:30.041  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:30.042  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:30.043  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-09-16 17:32:30.043  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:30.045  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:30.045  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:30.046  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-09-16 17:32:30.046  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:30.047  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2017-09-16 17:32:30.047  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:30.048  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:30.048  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:30.156  INFO 11534 --- [    Test worker] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-16 17:32:30.156  INFO 11534 --- [    Test worker] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-16 17:32:30.166  INFO 11534 --- [    Test worker] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2017-09-16 17:32:30.186  INFO 11534 --- [    Test worker] o.e.jetty.server.AbstractConnector       : Started ServerConnector@37194787{HTTP/1.1,[http/1.1]}{0.0.0.0:59106}
+2017-09-16 17:32:30.186  INFO 11534 --- [    Test worker] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 59106 (http/1.1)
+Let's inspect the beans provided by Spring Boot:
+actuatorMetricReader
+application
+applicationContextIdFilter
+auditEventMvcEndpoint
+auditEventRepository
+auditListener
+autoConfigurationReportEndpoint
+basicErrorController
+beanNameHandlerMapping
+beanNameViewResolver
+beansEndpoint
+characterEncodingFilter
+commandLineRunner
+configurationPropertiesReportEndpoint
+conventionErrorViewResolver
+counterBuffers
+counterService
+defaultServletHandlerMapping
+defaultValidator
+defaultViewResolver
+diskSpaceHealthIndicator
+diskSpaceHealthIndicatorProperties
+dispatcherServlet
+dispatcherServletRegistration
+dumpEndpoint
+duplicateServerPropertiesDetector
+embeddedServletContainerCustomizerBeanPostProcessor
+endpointHandlerMapping
+endpoints-org.springframework.boot.actuate.endpoint.EndpointProperties
+endpoints.cors-org.springframework.boot.actuate.autoconfigure.EndpointCorsProperties
+endpoints.health-org.springframework.boot.actuate.autoconfigure.HealthMvcEndpointProperties
+endpoints.metrics.filter-org.springframework.boot.actuate.autoconfigure.MetricFilterProperties
+envInfoContributor
+environmentEndpoint
+environmentMvcEndpoint
+error
+errorAttributes
+errorPageCustomizer
+errorPageRegistrarBeanPostProcessor
+faviconHandlerMapping
+faviconRequestHandler
+gaugeBuffers
+gaugeService
+handlerExceptionResolver
+healthAggregator
+healthEndpoint
+healthMvcEndpoint
+heapdumpMvcEndpoint
+helloController
+hiddenHttpMethodFilter
+httpPutFormContentFilter
+httpRequestHandlerAdapter
+infoEndpoint
+jacksonObjectMapper
+jacksonObjectMapperBuilder
+jettyEmbeddedServletContainerFactory
+jsonComponentModule
+localeCharsetMappingsCustomizer
+loggersEndpoint
+loggersMvcEndpoint
+management.health.status-org.springframework.boot.actuate.autoconfigure.HealthIndicatorProperties
+management.info-org.springframework.boot.actuate.autoconfigure.InfoContributorProperties
+management.trace-org.springframework.boot.actuate.trace.TraceProperties
+managementContextResolver
+managementServerProperties
+managementServletContext
+mappingJackson2HttpMessageConverter
+messageConverters
+methodValidationPostProcessor
+metricReaderPublicMetrics
+metricWritersMetricExporter
+metricsEndpoint
+metricsFilter
+metricsMvcEndpoint
+multipartConfigElement
+multipartResolver
+mvcContentNegotiationManager
+mvcConversionService
+mvcEndpoints
+mvcPathMatcher
+mvcResourceUrlProvider
+mvcUriComponentsContributor
+mvcUrlPathHelper
+mvcValidator
+mvcViewResolver
+org.springframework.boot.actuate.autoconfigure.AuditAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration
+org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration$RequestMappingEndpointConfiguration
+org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$ApplicationContextFilterConfiguration
+org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$EndpointWebMvcConfiguration
+org.springframework.boot.actuate.autoconfigure.EndpointWebMvcManagementContextConfiguration
+org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$DiskSpaceHealthIndicatorConfiguration
+org.springframework.boot.actuate.autoconfigure.InfoContributorAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.ManagementServerPropertiesAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration$MetricExportPropertiesConfiguration
+org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration$StatsdConfiguration
+org.springframework.boot.actuate.autoconfigure.MetricFilterAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration$FastMetricServicesConfiguration
+org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.TraceRepositoryAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.TraceWebFilterAutoConfiguration
+org.springframework.boot.autoconfigure.AutoConfigurationPackages
+org.springframework.boot.autoconfigure.condition.BeanTypeRegistry
+org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration
+org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration
+org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration
+org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration
+org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration
+org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration
+org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedJetty
+org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration
+org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration
+org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration
+org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration
+org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration
+org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration
+org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration
+org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration
+org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration
+org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration
+org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration
+org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration$RestTemplateConfiguration
+org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration
+org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration
+org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter
+org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration
+org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration
+org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$JettyWebSocketConfiguration
+org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor
+org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store
+org.springframework.boot.test.mock.mockito.MockitoPostProcessor
+org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor
+org.springframework.boot.test.web.client.TestRestTemplate
+org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+org.springframework.context.annotation.internalCommonAnnotationProcessor
+org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+org.springframework.context.annotation.internalRequiredAnnotationProcessor
+org.springframework.context.annotation.internalScheduledAnnotationProcessor
+org.springframework.context.event.internalEventListenerFactory
+org.springframework.context.event.internalEventListenerProcessor
+org.springframework.scheduling.annotation.SchedulingConfiguration
+preserveErrorControllerTargetClassPostProcessor
+propertySourcesPlaceholderConfigurer
+requestContextFilter
+requestMappingEndpoint
+requestMappingHandlerAdapter
+requestMappingHandlerMapping
+resourceHandlerMapping
+restTemplateBuilder
+serverProperties
+shutdownEndpoint
+simpleControllerHandlerAdapter
+spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties
+spring.http.multipart-org.springframework.boot.autoconfigure.web.MultipartProperties
+spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties
+spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties
+spring.metrics.export-org.springframework.boot.actuate.metrics.export.MetricExportProperties
+spring.mvc-org.springframework.boot.autoconfigure.web.WebMvcProperties
+spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties
+standardJacksonObjectMapperBuilderCustomizer
+stringHttpMessageConverter
+systemPublicMetrics
+traceEndpoint
+traceRepository
+viewControllerHandlerMapping
+viewResolver
+webRequestLoggingFilter
+websocketContainerCustomizer
+welcomePageHandlerMapping
+2017-09-16 17:32:30.203  INFO 11534 --- [    Test worker] hello.HelloControllerIT                  : Started HelloControllerIT in 2.119 seconds (JVM running for 2.824)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.13</a> at 16-Sep-2017 5:32:31 PM</p>
+</div>
+</div>
+</body>
+</html>

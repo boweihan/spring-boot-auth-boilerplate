@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class hello.HelloControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class hello.HelloControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/hello.html">hello</a> &gt; HelloControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.013s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getHello</td>
+<td>0.013s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2017-09-16 17:32:30.374  INFO 11534 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [hello.HelloControllerTest], using SpringBootContextLoader
+2017-09-16 17:32:30.375  INFO 11534 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [hello.HelloControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-09-16 17:32:30.375  INFO 11534 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hello.HelloControllerTest]: HelloControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2017-09-16 17:32:30.387  INFO 11534 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hello.Application for test class hello.HelloControllerTest
+2017-09-16 17:32:30.390  INFO 11534 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-09-16 17:32:30.392  INFO 11534 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2017-09-16 17:32:30.393  INFO 11534 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2017-09-16 17:32:30.393  INFO 11534 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5990016a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@19bdd959, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@761dda8e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7af8b60e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@23ba636a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@543a0155, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4ceb78f6, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@739cefa3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3cd6389, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7f9fa0c]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.7.RELEASE)
+
+2017-09-16 17:32:30.439  INFO 11534 --- [    Test worker] hello.HelloControllerTest                : Starting HelloControllerTest on Boweis-MacBook-Pro.local with PID 11534 (started by bowei in /Users/bowei/Documents/Development/bsa/bsa-server)
+2017-09-16 17:32:30.439  INFO 11534 --- [    Test worker] hello.HelloControllerTest                : No active profile set, falling back to default profiles: default
+2017-09-16 17:32:30.441  INFO 11534 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6773dc2b: startup date [Sat Sep 16 17:32:30 EDT 2017]; root of context hierarchy
+2017-09-16 17:32:30.815  INFO 11534 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2017-09-16 17:32:30.815  INFO 11534 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-09-16 17:32:30.878  INFO 11534 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/]}&quot; onto public java.lang.String hello.HelloController.index()
+2017-09-16 17:32:30.879  INFO 11534 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-16 17:32:30.880  INFO 11534 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-16 17:32:30.899  INFO 11534 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-16 17:32:30.899  INFO 11534 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-16 17:32:30.910  INFO 11534 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-16 17:32:31.029  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2017-09-16 17:32:31.029  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2017-09-16 17:32:31.030  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2017-09-16 17:32:31.030  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map&lt;java.lang.String, java.lang.String&gt;)
+2017-09-16 17:32:31.031  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:31.031  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:31.031  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:31.032  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-09-16 17:32:31.032  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:31.033  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}&quot; onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-09-16 17:32:31.033  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:31.034  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:31.034  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:31.035  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:31.035  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:31.036  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-09-16 17:32:31.036  INFO 11534 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-09-16 17:32:31.093  INFO 11534 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6773dc2b: startup date [Sat Sep 16 17:32:30 EDT 2017]; root of context hierarchy
+2017-09-16 17:32:31.118  INFO 11534 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 303 ms
+Let's inspect the beans provided by Spring Boot:
+actuatorMetricReader
+application
+applicationContextIdFilter
+auditEventMvcEndpoint
+auditEventRepository
+auditListener
+autoConfigurationReportEndpoint
+basicErrorController
+beanNameHandlerMapping
+beanNameViewResolver
+beansEndpoint
+characterEncodingFilter
+commandLineRunner
+configurationPropertiesReportEndpoint
+conventionErrorViewResolver
+counterBuffers
+counterService
+defaultServletHandlerMapping
+defaultValidator
+defaultViewResolver
+diskSpaceHealthIndicator
+diskSpaceHealthIndicatorProperties
+dispatcherServlet
+dispatcherServletRegistration
+dumpEndpoint
+duplicateServerPropertiesDetector
+embeddedServletContainerCustomizerBeanPostProcessor
+endpointHandlerMapping
+endpoints-org.springframework.boot.actuate.endpoint.EndpointProperties
+endpoints.cors-org.springframework.boot.actuate.autoconfigure.EndpointCorsProperties
+endpoints.health-org.springframework.boot.actuate.autoconfigure.HealthMvcEndpointProperties
+endpoints.metrics.filter-org.springframework.boot.actuate.autoconfigure.MetricFilterProperties
+envInfoContributor
+environmentEndpoint
+environmentMvcEndpoint
+error
+errorAttributes
+errorPageCustomizer
+errorPageRegistrarBeanPostProcessor
+faviconHandlerMapping
+faviconRequestHandler
+gaugeBuffers
+gaugeService
+handlerExceptionResolver
+healthAggregator
+healthEndpoint
+healthMvcEndpoint
+heapdumpMvcEndpoint
+helloController
+hiddenHttpMethodFilter
+httpPutFormContentFilter
+httpRequestHandlerAdapter
+infoEndpoint
+jacksonObjectMapper
+jacksonObjectMapperBuilder
+jettyEmbeddedServletContainerFactory
+jsonComponentModule
+localeCharsetMappingsCustomizer
+loggersEndpoint
+loggersMvcEndpoint
+management.health.status-org.springframework.boot.actuate.autoconfigure.HealthIndicatorProperties
+management.info-org.springframework.boot.actuate.autoconfigure.InfoContributorProperties
+management.trace-org.springframework.boot.actuate.trace.TraceProperties
+managementContextResolver
+managementServerProperties
+managementServletContext
+mappingJackson2HttpMessageConverter
+messageConverters
+methodValidationPostProcessor
+metricReaderPublicMetrics
+metricWritersMetricExporter
+metricsEndpoint
+metricsFilter
+metricsMvcEndpoint
+mockMvc
+mockMvcBuilder
+multipartConfigElement
+multipartResolver
+mvcContentNegotiationManager
+mvcConversionService
+mvcEndpoints
+mvcPathMatcher
+mvcResourceUrlProvider
+mvcUriComponentsContributor
+mvcUrlPathHelper
+mvcValidator
+mvcViewResolver
+org.springframework.boot.actuate.autoconfigure.AuditAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration
+org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration$RequestMappingEndpointConfiguration
+org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$ApplicationContextFilterConfiguration
+org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$EndpointWebMvcConfiguration
+org.springframework.boot.actuate.autoconfigure.EndpointWebMvcManagementContextConfiguration
+org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$DiskSpaceHealthIndicatorConfiguration
+org.springframework.boot.actuate.autoconfigure.InfoContributorAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.ManagementServerPropertiesAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration$MetricExportPropertiesConfiguration
+org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration$StatsdConfiguration
+org.springframework.boot.actuate.autoconfigure.MetricFilterAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration$FastMetricServicesConfiguration
+org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.TraceRepositoryAutoConfiguration
+org.springframework.boot.actuate.autoconfigure.TraceWebFilterAutoConfiguration
+org.springframework.boot.autoconfigure.AutoConfigurationPackages
+org.springframework.boot.autoconfigure.condition.BeanTypeRegistry
+org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration
+org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration
+org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration
+org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration
+org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration
+org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration
+org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedJetty
+org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration
+org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration
+org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration
+org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration
+org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration
+org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration
+org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration
+org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration
+org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration
+org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration
+org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration
+org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration$RestTemplateConfiguration
+org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration
+org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration
+org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter
+org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration
+org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration
+org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$JettyWebSocketConfiguration
+org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor
+org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store
+org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration
+org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration
+org.springframework.boot.test.context.ImportsContextCustomizer$ImportsCleanupPostProcessor
+org.springframework.boot.test.mock.mockito.MockitoPostProcessor
+org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor
+org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+org.springframework.context.annotation.internalCommonAnnotationProcessor
+org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+org.springframework.context.annotation.internalRequiredAnnotationProcessor
+org.springframework.context.annotation.internalScheduledAnnotationProcessor
+org.springframework.context.event.internalEventListenerFactory
+org.springframework.context.event.internalEventListenerProcessor
+org.springframework.scheduling.annotation.SchedulingConfiguration
+preserveErrorControllerTargetClassPostProcessor
+propertySourcesPlaceholderConfigurer
+requestContextFilter
+requestMappingEndpoint
+requestMappingHandlerAdapter
+requestMappingHandlerMapping
+resourceHandlerMapping
+restTemplateBuilder
+serverProperties
+shutdownEndpoint
+simpleControllerHandlerAdapter
+spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties
+spring.http.multipart-org.springframework.boot.autoconfigure.web.MultipartProperties
+spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties
+spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties
+spring.metrics.export-org.springframework.boot.actuate.metrics.export.MetricExportProperties
+spring.mvc-org.springframework.boot.autoconfigure.web.WebMvcProperties
+spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties
+springBootMockMvcBuilderCustomizer
+standardJacksonObjectMapperBuilderCustomizer
+stringHttpMessageConverter
+systemPublicMetrics
+traceEndpoint
+traceRepository
+viewControllerHandlerMapping
+viewResolver
+webRequestLoggingFilter
+websocketContainerCustomizer
+welcomePageHandlerMapping
+2017-09-16 17:32:31.232  INFO 11534 --- [    Test worker] hello.HelloControllerTest                : Started HelloControllerTest in 0.829 seconds (JVM running for 3.853)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.13</a> at 16-Sep-2017 5:32:31 PM</p>
+</div>
+</div>
+</body>
+</html>
