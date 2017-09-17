@@ -2,6 +2,7 @@ package app.resources;
 
 import app.entities.Role;
 import app.entities.User;
+import app.exceptions.InvalidEntityException;
 import app.interfaces.RoleDAOInterface;
 import app.interfaces.UserDAOInterface;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.websocket.server.PathParam;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @RestController
@@ -24,6 +26,10 @@ public class RolesResource {
 
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void create(@RequestBody Role role) {
+        Role existingRole = roleDAOInterface.findByName(role.getName());
+        if (existingRole != null) {
+            throw new InvalidEntityException("There is already a role with that name", Collections.emptyList());
+        }
         roleDAOInterface.save(role);
     }
 

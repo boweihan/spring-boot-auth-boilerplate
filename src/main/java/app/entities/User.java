@@ -2,6 +2,7 @@ package app.entities;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
@@ -11,6 +12,10 @@ import java.util.Set;
 @Table(name = "users")
 public class User {
 
+    /*
+        JsonIgnore breaks circular reference in ManyToMany
+     */
+    @JsonIgnore
     @ManyToMany(mappedBy = "users")
     private Set<Role> roles;
 

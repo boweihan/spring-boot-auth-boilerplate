@@ -1,5 +1,7 @@
 package app.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -7,6 +9,10 @@ import java.util.Set;
 @Table(name = "roles")
 public class Role {
 
+    /*
+        JsonIgnore breaks circular reference in ManyToMany
+     */
+    @JsonIgnore
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable
     private Set<User> users;
