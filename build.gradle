@@ -39,8 +39,12 @@ dependencies {
     testCompile("junit:junit")
     testCompile("org.springframework.boot:spring-boot-starter-test")
     testCompile("org.springframework.security:spring-security-test")
-    // end:tests[]
+    // end::tests[]
     // tag::security[]
     compile("org.springframework.boot:spring-boot-starter-security")
     // end::security[]
+    // start::database[]
+    compile("org.postgresql:postgresql:42.1.4")
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    // end::database[]
 }
