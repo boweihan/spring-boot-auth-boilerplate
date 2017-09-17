@@ -7,3 +7,9 @@ Implementation Notes:
 - JUnit (TDD)
 - Security (Basic authorization/Authentication)
 - Data-JPA/PostgreSQL (Relational DB)
+
+TODO:
+- Snowflake IDS
+- Hashed passwords
+- Authentication tokens with endpoints to get TOKEN
+- Users hooked up with webSecurityConfig

@@ -34,6 +34,12 @@ public class UsersResource {
         return userDAOInterface.findOne(id);
     }
 
+    @RequestMapping(value = "/name")
+    public void read() { // FIXME: this is returning a 200
+        String lastName = "last";
+        userDAOInterface.findByName(lastName);
+    }
+
     @RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void update(@RequestBody User user) {
         userDAOInterface.save(user);
