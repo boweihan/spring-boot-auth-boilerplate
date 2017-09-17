@@ -26,10 +26,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 //                .authoritiesByUsernameQuery(
 //                        "select username, role from user_roles where username=?");
 //    }
-
-    // roles admin allow to access /admin/**
-    // roles user allow to access /user/**
-    // custom 403 access denied handler
+    
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
