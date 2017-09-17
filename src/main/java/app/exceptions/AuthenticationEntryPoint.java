@@ -1,4 +1,4 @@
-package app;
+package app.exceptions;
 
 import java.io.IOException;
 import java.io.PrintWriter;

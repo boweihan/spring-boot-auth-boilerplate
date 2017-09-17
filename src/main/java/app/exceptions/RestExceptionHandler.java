@@ -1,4 +1,4 @@
-package app;
+package app.exceptions;
 
 import app.exceptions.InvalidEntityException;
 import org.springframework.http.HttpHeaders;
