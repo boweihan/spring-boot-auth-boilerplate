@@ -20,7 +20,7 @@ public class UsersResource {
     public void create(@RequestBody User user) {
         userDAOInterface.save(user);
     }
-
+    git rm -r --cached .
     @RequestMapping(value = "/")
     public List<User> readAll() {
         Iterable<User> iterable = userDAOInterface.findAll();
