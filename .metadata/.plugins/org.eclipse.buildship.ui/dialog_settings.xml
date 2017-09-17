@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<section name="Workbench">
-	<section name="org.eclipse.buildship.ui.wizard.project.import">
-		<item value="false" key="apply_working_sets"/>
-		<item value="/Users/bowei/Documents/Development/bsa" key="project_location"/>
-		<list key="working_sets">
-		</list>
-	</section>
-</section>
