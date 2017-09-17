@@ -1,3 +1,0 @@
-build.commands=org.eclipse.jdt.core.javabuilder
-eclipse.preferences.version=1
-natures=org.eclipse.jdt.core.javanature

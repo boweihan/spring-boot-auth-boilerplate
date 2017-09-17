@@ -1,3 +1,7 @@
 https://spring.io/guides/gs/gradle/
 https://spring.io/guides/gs/spring-boot/
 https://www.dineshonjava.com/spring-boot-actuator-complete-guide/#2
+
+- Authentication and Authorization -
+https://dzone.com/articles/spring-security-4-authenticate-and-authorize-users
+https://docs.spring.io/spring-security/site/docs/current/reference/html/jc.html
