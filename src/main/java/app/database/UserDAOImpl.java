@@ -1,9 +1,7 @@
 package app.database;
 
 import app.interfaces.UserDAOInterface;
-import app.models.User;
-
-import java.util.List;
+import app.entities.User;
 
 public abstract class UserDAOImpl implements UserDAOInterface {
     @Override

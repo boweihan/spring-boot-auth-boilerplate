@@ -1,6 +1,6 @@
 package app.resources;
 
-import app.models.User;
+import app.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -21,7 +21,7 @@ public class UsersResource {
         userDAOInterface.save(user);
     }
 
-    @RequestMapping(value = "/")
+    @RequestMapping(method = RequestMethod.GET)
     public List<User> readAll() {
         Iterable<User> iterable = userDAOInterface.findAll();
         List<User> users = new ArrayList<>();
