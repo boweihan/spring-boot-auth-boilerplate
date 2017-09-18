@@ -5,11 +5,10 @@ Implementation Notes:
 - Jetty (web server)
 - Actuator (production stats and endpoints)
 - JUnit (TDD)
-- Security (Basic authorization/Authentication)
+- Security (Basic authorization/Authentication + user roles)
 - Data-JPA/PostgreSQL (Relational DB)
 
 TODO:
 - Snowflake IDS
 - Hashed passwords
 - Authentication tokens with endpoints to get TOKEN
-- Users hooked up with webSecurityConfig

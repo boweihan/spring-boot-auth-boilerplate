@@ -24,7 +24,7 @@ public class UsersResourceTest {
     private MockMvc mvc;
 
     @Test
-    @WithMockUser(username="admin",roles={"USER","ADMIN"})
+    @WithMockUser(username="admin",roles={"USER", "ADMIN"})
     public void getHello() throws Exception {
 //        mvc.perform(MockMvcRequestBuilders.get("/api/users/").accept(MediaType.APPLICATION_JSON))
 //                .andExpect(status().isOk())
