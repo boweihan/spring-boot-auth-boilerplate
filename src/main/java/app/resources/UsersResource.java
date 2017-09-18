@@ -1,13 +1,17 @@
 package app.resources;
 
+import app.entities.Role;
 import app.entities.User;
+import app.exceptions.InvalidEntityException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import app.interfaces.UserDAOInterface;
 
 import javax.websocket.server.PathParam;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @RestController
@@ -19,6 +23,13 @@ public class UsersResource {
 
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void create(@RequestBody User user) {
+        User existingUser = userDAOInterface.findByEmail(user.getEmail());
+
+        if (existingUser != null) {
+            throw new InvalidEntityException("There is already a user with that email", Collections.emptyList());
+        }
+
+        user.setPassword(new BCryptPasswordEncoder().encode(user.getPassword()));
         userDAOInterface.save(user);
     }
 

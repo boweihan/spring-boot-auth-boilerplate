@@ -26,7 +26,7 @@ public class RolesResource {
 
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void create(@RequestBody Role role) {
-        Role existingRole = roleDAOInterface.findByName(role.getName());
+        Role existingRole = roleDAOInterface.findByName(role.getRole().toString());
         if (existingRole != null) {
             throw new InvalidEntityException("There is already a role with that name", Collections.emptyList());
         }

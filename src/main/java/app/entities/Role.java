@@ -9,6 +9,10 @@ import java.util.Set;
 @Table(name = "roles")
 public class Role {
 
+    public enum validRoles {
+        USER, ADMIN
+    }
+
     /*
         JsonIgnore breaks circular reference in ManyToMany
      */
@@ -20,7 +24,7 @@ public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String name;
+    private Role role;
     private String description;
 
     public Long getId() {
@@ -31,12 +35,12 @@ public class Role {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public Role getRole() {
+        return role;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setRole(String name) {
+        this.role = role;
     }
 
     public String getDescription() {
