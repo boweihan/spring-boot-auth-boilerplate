@@ -4,6 +4,7 @@ import app.entities.User;
 import app.exceptions.InvalidEntityException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import app.interfaces.UserDAOInterface;
 
@@ -26,6 +27,7 @@ public class UsersResource {
             throw new InvalidEntityException("There is already a user with that email", Collections.emptyList());
         }
 
+        user.setPassword(new BCryptPasswordEncoder().encode(user.getPassword()));
         userDAOInterface.save(user);
     }
 

@@ -34,7 +34,10 @@ public class User {
     private long id;
     private String name;
     private String email;
+
+    @JsonIgnore
     private String password;
+
     private boolean enabled;
 
 
