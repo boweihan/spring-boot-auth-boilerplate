@@ -45,7 +45,7 @@ public class UsersResource {
     }
 
     @RequestMapping(value = "/name")
-    public void read() { // FIXME: this is returning a 200
+    public void read() {
         String lastName = "last";
         userDAOInterface.findByName(lastName);
     }
