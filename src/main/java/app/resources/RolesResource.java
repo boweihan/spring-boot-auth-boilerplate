@@ -18,11 +18,16 @@ import java.util.List;
 @RequestMapping("/api/roles")
 public class RolesResource {
 
-    @Autowired
-    RoleDAOInterface roleDAOInterface;
+    private UserDAOInterface userDAOInterface;
+    private RoleDAOInterface roleDAOInterface;
 
     @Autowired
-    UserDAOInterface userDAOInterface;
+    public RolesResource(
+            UserDAOInterface userDAOInterface,
+            RoleDAOInterface roleDAOInterface) {
+        this.userDAOInterface = userDAOInterface;
+        this.roleDAOInterface = roleDAOInterface;
+    }
 
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void create(@RequestBody Role role) {

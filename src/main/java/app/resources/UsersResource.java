@@ -16,8 +16,13 @@ import java.util.List;
 @RequestMapping("/api/users")
 public class UsersResource {
 
+    private UserDAOInterface userDAOInterface;
+
     @Autowired
-    UserDAOInterface userDAOInterface;
+    public UsersResource(
+            UserDAOInterface userDAOInterface) {
+        this.userDAOInterface = userDAOInterface;
+    }
 
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void create(@RequestBody User user) {
