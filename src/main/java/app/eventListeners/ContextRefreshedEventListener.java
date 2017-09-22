@@ -68,7 +68,7 @@ public class ContextRefreshedEventListener {
     }
 
     /*
-        Seed role
+        Seed admin role
      */
     @Transactional
     private void seedRole() {
