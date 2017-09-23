@@ -44,12 +44,20 @@ Or execute both commands at once :)
 If this didn't work right away, you might need to configure your local postgres database (next section).
 <br/><br/>
 <h2>Configuring PostgreSQL to work with basic-spring-boot-server</h2>
-Local DB configuration can be found in application.properties. Replace the existing properties with your local
+Local DB configuration can be found in application.yml. Replace the existing properties with your local
 PostgreSQL config. For example:<br/><br/>
-spring.datasource.url=jdbc:postgresql://localhost:5432/YOUR_DATABASE_NAME<br/>
-spring.datasource.username=YOUR_USERNAME<br/>
-spring.datasource.password=YOUR_PASSWORD
-<br/></br>
+url=jdbc:postgresql://localhost:5432/YOUR_DATABASE_NAME<br/>
+username=YOUR_USERNAME<br/>
+password=YOUR_PASSWORD
+<br/><br/>
+<h2>Deployment</h2>
+<b>basic-spring-boot-server</b> is configured to work with Heroku out of the box.
+To deploy the application to your Heroku account simply follow the instructions here:
+<br/><br/>
+https://devcenter.heroku.com/articles/deploying-gradle-apps-on-heroku
+<br/><br/>
+Base production configurations are set up in application.yml.
+<br/></br/>
 <h2>Notes</h2>
 - Server is configured to run on port 8080<br/>
 - API security management is configured in WebSecurityConfig.java<br/>
