@@ -60,6 +60,7 @@ public class ContextRefreshedEventListener {
             user.setName("admin");
             user.setEmail("admin@bsbs.com");
             user.setPassword(new BCryptPasswordEncoder().encode("password"));
+            user.setEnabled(true);
             userDAOInterface.save(user);
             logger.info("Admin user seeded");
         } else {
@@ -97,6 +98,8 @@ public class ContextRefreshedEventListener {
             user.setId(resultSet.getLong("id"));
             user.setName(resultSet.getString("name"));
             user.setEmail(resultSet.getString("email"));
+            user.setEnabled(resultSet.getBoolean("enabled"));
+            user.setPassword(resultSet.getString("password"));
             return user;
         });
 

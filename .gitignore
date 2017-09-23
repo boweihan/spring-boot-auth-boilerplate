@@ -4,3 +4,8 @@ build/
 .idea/
 .metadata/
 .settings/
+
+out
+*.iml
+*.ipr
+*.iws

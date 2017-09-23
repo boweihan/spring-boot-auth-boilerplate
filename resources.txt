@@ -10,3 +10,6 @@ https://spring.io/guides/topicals/spring-security-architecture/
 
 - Deployment -
 http://carlmartensen.com/step-by-step-guide-to-building-and-deploying-a-database-backed-spring-boot-web-application-in-aws
+https://aws.amazon.com/blogs/devops/deploying-a-spring-boot-application-on-aws-using-aws-elastic-beanstalk/
+https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
+https://devcenter.heroku.com/articles/connecting-to-relational-databases-on-heroku-with-java

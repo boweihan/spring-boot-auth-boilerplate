@@ -1,0 +1,69 @@
+spring:
+    profiles:
+        active: development
+
+---
+
+spring:
+    profiles: development
+    database:
+        driverClassName: org.postgresql.Driver
+    jpa:
+        generate-ddl: true
+    datasource:
+        url: jdbc:postgresql://localhost:5432/bsa
+        username: bowei
+        password: password
+        maxActive: 10
+        maxIdle: 5
+        minIdle: 2
+        initialSize: 5
+        removeAbandoned: true
+management:
+    security:
+        enabled: false
+
+info:
+    app:
+        name: Basic Spring Boot Server
+        description: Base server scaffold to reduce startup time
+        version: 0.0.1
+server:
+    port: 8080
+logging:
+    level:
+        org.hibernate.SQL: DEBUG
+        org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+---
+
+spring:
+    profiles: production
+    database:
+        driverClassName: org.postgresql.Driver
+    jpa:
+        generate-ddl: true
+    datasource:
+        url: ${JDBC_DATABASE_URL}
+        username: ${JDBC_DATABASE_USERNAME}
+        password: ${JDBC_DATABASE_PASSWORD}
+        maxActive: 10
+        maxIdle: 5
+        minIdle: 2
+        initialSize: 5
+        removeAbandoned: true
+management:
+    security:
+        enabled: false
+
+info:
+    app:
+        name: Basic Spring Boot Server
+        description: Base server scaffold to reduce startup time
+        version: 0.0.1
+server:
+    port: 8080
+logging:
+    level:
+        org.hibernate.SQL: DEBUG
+        org.hibernate.type.descriptor.sql.BasicBinder: TRACE
