@@ -4,7 +4,9 @@ import app.entities.Role;
 import app.entities.User;
 import app.exceptions.InvalidEntityException;
 import app.interfaces.RoleDAOInterface;
+import app.interfaces.RolesServiceInterface;
 import app.interfaces.UserDAOInterface;
+import app.services.RolesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -18,56 +20,41 @@ import java.util.List;
 @RequestMapping("/api/roles")
 public class RolesResource {
 
-    private UserDAOInterface userDAOInterface;
-    private RoleDAOInterface roleDAOInterface;
+    private RolesServiceInterface rolesServiceInterface;
 
     @Autowired
     public RolesResource(
-            UserDAOInterface userDAOInterface,
-            RoleDAOInterface roleDAOInterface) {
-        this.userDAOInterface = userDAOInterface;
-        this.roleDAOInterface = roleDAOInterface;
+            RolesServiceInterface rolesServiceInterface) {
+        this.rolesServiceInterface = rolesServiceInterface;
     }
 
-    @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void create(@RequestBody Role role) {
-        Role existingRole = roleDAOInterface.findByName(role.getName());
-
-        if (existingRole != null) {
-            throw new InvalidEntityException("There is already a role with that name", Collections.emptyList());
-        }
-
-        roleDAOInterface.save(role);
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+    public Role create(@RequestBody Role role) {
+        return rolesServiceInterface.createRole(role);
     }
 
-    @RequestMapping(method = RequestMethod.GET)
+    @GetMapping
     public List<Role> readAll() {
-        Iterable<Role> iterable = roleDAOInterface.findAll();
-        List<Role> roles = new ArrayList<>();
-        iterable.forEach(roles::add);
-        return roles;
+        return rolesServiceInterface.getAllRoles();
     }
 
-    @RequestMapping(value = "/{id}")
+    @GetMapping(value = "/{id}")
     public Role read(@PathVariable long id) {
-        return roleDAOInterface.findOne(id);
+        return rolesServiceInterface.getRole(id);
     }
 
-    @RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void update(@RequestBody Role role) {
-        roleDAOInterface.save(role);
+    @PutMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+    public Role update(@RequestBody Role role) {
+        return rolesServiceInterface.updateRole(role);
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    @DeleteMapping(value = "/{id}")
     public void delete(@PathVariable long id) {
-        roleDAOInterface.delete(id);
+        rolesServiceInterface.deleteRole(id);
     }
 
-    @RequestMapping(value = "/{id}/assign", method = RequestMethod.POST)
+    @PostMapping(value = "/{id}/assign")
     public void assignUserToRole(@PathVariable long id, @PathParam("userId") long userId) {
-        User user = userDAOInterface.findOne(userId);
-        Role role = roleDAOInterface.findOne(id);
-        role.addUser(user);
-        roleDAOInterface.save(role);
+        rolesServiceInterface.assignUserToRole(id, userId);
     }
 }
