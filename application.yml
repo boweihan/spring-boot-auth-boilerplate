@@ -1,6 +1,20 @@
 spring:
     profiles:
         active: development
+info:
+    app:
+        name: Basic Spring Boot Server
+        description: Base server scaffold to reduce startup time
+        version: 0.0.1
+server:
+    port: 8080
+management:
+    security:
+        enabled: false
+logging:
+    level:
+        org.hibernate.SQL: DEBUG
+        org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 
 ---
 
@@ -19,21 +33,6 @@ spring:
         minIdle: 2
         initialSize: 5
         removeAbandoned: true
-management:
-    security:
-        enabled: false
-
-info:
-    app:
-        name: Basic Spring Boot Server
-        description: Base server scaffold to reduce startup time
-        version: 0.0.1
-server:
-    port: 8080
-logging:
-    level:
-        org.hibernate.SQL: DEBUG
-        org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 
 ---
 
@@ -55,15 +54,3 @@ spring:
 management:
     security:
         enabled: false
-
-info:
-    app:
-        name: Basic Spring Boot Server
-        description: Base server scaffold to reduce startup time
-        version: 0.0.1
-server:
-    port: 8080
-logging:
-    level:
-        org.hibernate.SQL: DEBUG
-        org.hibernate.type.descriptor.sql.BasicBinder: TRACE
