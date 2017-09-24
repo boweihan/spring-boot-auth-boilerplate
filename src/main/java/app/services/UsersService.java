@@ -60,4 +60,9 @@ public class UsersService implements UsersServiceInterface {
     public void deleteUser(Long id) {
         userDAOInterface.delete(id);
     }
+
+    @Override
+    public User getUserByEmail(String email) {
+        return userDAOInterface.findByEmail(email);
+    }
 }

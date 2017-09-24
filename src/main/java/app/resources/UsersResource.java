@@ -1,5 +1,6 @@
 package app.resources;
 
+import app.dto.LoginDTO;
 import app.entities.User;
 import app.interfaces.UsersServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,5 +44,13 @@ public class UsersResource {
     @DeleteMapping(value = "/{id}")
     public void delete(@PathVariable long id) {
         usersServiceInterface.deleteUser(id);
+    }
+
+    /*
+        Authentication token handled client-side, this endpoint just returns the user object
+     */
+    @PostMapping(value = "/login")
+    public User login(@RequestBody LoginDTO loginDTO) {
+        return usersServiceInterface.getUserByEmail(loginDTO.getEmail());
     }
 }
