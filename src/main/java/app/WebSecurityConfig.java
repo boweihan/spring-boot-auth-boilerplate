@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -40,19 +41,27 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     /*
+        Ignore authentication on certain matched resources
+     */
+    @Override
+    public void configure(WebSecurity web) throws Exception {
+        web.ignoring()
+                .antMatchers("/api/users/signup");
+    }
+    /*
         Additional configuration for jdbc/in memory authentication
      */
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.jdbcAuthentication()
                 .dataSource(dataSource)
-                .usersByUsernameQuery(
-                        "select name, password, enabled from users where name=?")
+                .usersByUsernameQuery( // using emails as usernames
+                        "select email, password, enabled from users where email=?")
                 .authoritiesByUsernameQuery(
-                        "select u.name, r.name from users u " +
+                        "select u.email, r.name from users u " +
                                 "inner join roles_users ru on(u.id=ru.users_id) " +
                                 "inner join roles r on(r.id=ru.roles_id) " +
-                                "where u.name=?")
+                                "where u.email=?")
                 .passwordEncoder(passwordEncoder());
     }
 

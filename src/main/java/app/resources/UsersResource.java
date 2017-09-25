@@ -1,28 +1,41 @@
 package app.resources;
 
 import app.dto.LoginDTO;
+import app.dto.UserDTO;
+import app.entities.Role;
 import app.entities.User;
+import app.interfaces.RoleDAOInterface;
 import app.interfaces.UsersServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @RestController
 @RequestMapping("/api/users")
 public class UsersResource {
 
     private UsersServiceInterface usersServiceInterface;
+    private RoleDAOInterface roleDAOInterface;
 
     @Autowired
     public UsersResource(
-            UsersServiceInterface usersServiceInterface) {
+            UsersServiceInterface usersServiceInterface,
+            RoleDAOInterface roleDAOInterface) {
         this.usersServiceInterface = usersServiceInterface;
+        this.roleDAOInterface = roleDAOInterface;
     }
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-    public User create(@RequestBody User user) {
+    public User create(@RequestBody UserDTO userDTO) {
+        User user = new User();
+        user.setName(userDTO.getName());
+        user.setEmail(userDTO.getEmail());
+        user.setPassword(userDTO.getPassword());
+        user.setEnabled(userDTO.isEnabled());
         return usersServiceInterface.createUser(user);
     }
 
@@ -37,7 +50,11 @@ public class UsersResource {
     }
 
     @PutMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-    public User update(@RequestBody User user) {
+    public User update(@RequestBody UserDTO userDTO) {
+        User user = usersServiceInterface.getUserByEmail(userDTO.getEmail());
+        user.setName(userDTO.getName());
+        user.setPassword(userDTO.getPassword());
+        user.setEnabled(userDTO.isEnabled());
         return usersServiceInterface.updateUser(user);
     }
 
@@ -46,11 +63,26 @@ public class UsersResource {
         usersServiceInterface.deleteUser(id);
     }
 
-    /*
-        Authentication token handled client-side, this endpoint just returns the user object
-     */
     @PostMapping(value = "/login")
     public User login(@RequestBody LoginDTO loginDTO) {
         return usersServiceInterface.getUserByEmail(loginDTO.getEmail());
+    }
+
+    /*
+        Unsecured SignUp Endpoint
+     */
+    @PostMapping(value = "/signup")
+    public User signup(@RequestBody UserDTO userDTO) {
+        User user = new User();
+        user.setName(userDTO.getName());
+        user.setEmail(userDTO.getEmail());
+        user.setPassword(userDTO.getPassword());
+        user.setEnabled(userDTO.isEnabled());
+
+        Set<Role> roles = new HashSet<>();
+        roles.add(roleDAOInterface.findByName("user"));
+
+        user.setRoles(roles);
+        return usersServiceInterface.createUser(user);
     }
 }

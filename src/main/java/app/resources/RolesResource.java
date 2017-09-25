@@ -17,7 +17,7 @@ import java.util.Collections;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/roles")
+@RequestMapping("/admin/roles")
 public class RolesResource {
 
     private RolesServiceInterface rolesServiceInterface;
