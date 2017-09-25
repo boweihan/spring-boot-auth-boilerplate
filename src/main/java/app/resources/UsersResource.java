@@ -63,13 +63,16 @@ public class UsersResource {
         usersServiceInterface.deleteUser(id);
     }
 
+    /*
+        Current login implementation. Let front end handle authentication token in browser session for now∂
+     */
     @PostMapping(value = "/login")
     public User login(@RequestBody LoginDTO loginDTO) {
         return usersServiceInterface.getUserByEmail(loginDTO.getEmail());
     }
 
     /*
-        Unsecured SignUp Endpoint
+        Unsecured SignUp Endpoint. Used to create users with base permissions.
      */
     @PostMapping(value = "/signup")
     public User signup(@RequestBody UserDTO userDTO) {

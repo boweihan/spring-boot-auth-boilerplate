@@ -7,9 +7,12 @@ https://www.dineshonjava.com/spring-boot-actuator-complete-guide/#2
 https://dzone.com/articles/spring-security-4-authenticate-and-authorize-users
 https://docs.spring.io/spring-security/site/docs/current/reference/html/jc.html
 https://spring.io/guides/topicals/spring-security-architecture/
+https://www.linkedin.com/pulse/json-web-token-jwt-spring-security-real-world-example-boris-trivic // JSON WEB TOKEN
+
 
 - Deployment -
 http://carlmartensen.com/step-by-step-guide-to-building-and-deploying-a-database-backed-spring-boot-web-application-in-aws
 https://aws.amazon.com/blogs/devops/deploying-a-spring-boot-application-on-aws-using-aws-elastic-beanstalk/
 https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
 https://devcenter.heroku.com/articles/connecting-to-relational-databases-on-heroku-with-java
+
