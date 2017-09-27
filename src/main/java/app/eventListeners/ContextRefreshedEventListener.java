@@ -43,7 +43,8 @@ public class ContextRefreshedEventListener {
     @EventListener
     public void seed(ContextRefreshedEvent event) {
         seedUser();
-        seedRole();
+        seedAdminRole();
+        seedUserRole();
         seedJoinTable();
     }
 
@@ -72,7 +73,7 @@ public class ContextRefreshedEventListener {
         Seed admin role
      */
     @Transactional
-    private void seedRole() {
+    private void seedAdminRole() {
         String roleSql = "SELECT name FROM roles R WHERE R.name = \'admin\' LIMIT 1";
         List<Role> r = jdbcTemplate.query(roleSql, (resultSet, rowNum) -> null);
 
@@ -82,6 +83,25 @@ public class ContextRefreshedEventListener {
             role.setName("admin");
             roleDAOInterface.save(role);
             logger.info("Admin user seeded");
+        } else {
+            logger.info("Seeding not required");
+        }
+    }
+
+    /*
+    Seed user role
+ */
+    @Transactional
+    private void seedUserRole() {
+        String roleSql = "SELECT name FROM roles R WHERE R.name = \'user\' LIMIT 1";
+        List<Role> r = jdbcTemplate.query(roleSql, (resultSet, rowNum) -> null);
+
+        if(r == null || r.size() <= 0) {
+            Role role = new Role();
+            role.setDescription("Regular User Role");
+            role.setName("user");
+            roleDAOInterface.save(role);
+            logger.info("Regular user seeded");
         } else {
             logger.info("Seeding not required");
         }
@@ -112,10 +132,10 @@ public class ContextRefreshedEventListener {
             return role;
         });
 
-        Set<User> users = new HashSet<>();
-        users.add(u);
-        r.setUsers(users);
-        roleDAOInterface.save(r);
+        Set<Role> roles = new HashSet<>();
+        roles.add(r);
+        u.setRoles(roles);
+        userDAOInterface.save(u);
     }
 
 }

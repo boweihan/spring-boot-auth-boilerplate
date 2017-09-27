@@ -64,7 +64,8 @@ public class UsersResource {
     }
 
     /*
-        Current login implementation. Let front end handle authentication token in browser session for now∂
+     *  Current login implementation.  Let front end handle authentication token in browser session for now
+     *  TODO: move to JWT
      */
     @PostMapping(value = "/login")
     public User login(@RequestBody LoginDTO loginDTO) {
@@ -72,7 +73,7 @@ public class UsersResource {
     }
 
     /*
-        Unsecured SignUp Endpoint. Used to create users with base permissions.
+     *  Unsecured SignUp Endpoint. Used to create users with base permissions.
      */
     @PostMapping(value = "/signup")
     public User signup(@RequestBody UserDTO userDTO) {

@@ -59,8 +59,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                         "select email, password, enabled from users where email=?")
                 .authoritiesByUsernameQuery(
                         "select u.email, r.name from users u " +
-                                "inner join roles_users ru on(u.id=ru.users_id) " +
-                                "inner join roles r on(r.id=ru.roles_id) " +
+                                "inner join users_roles ur on(u.id=ur.users_id) " +
+                                "inner join roles r on(r.id=ur.roles_id) " +
                                 "where u.email=?")
                 .passwordEncoder(passwordEncoder());
     }

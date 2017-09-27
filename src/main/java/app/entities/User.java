@@ -16,7 +16,8 @@ public class User {
         JsonIgnore breaks circular reference in ManyToMany
      */
     @JsonIgnore
-    @ManyToMany(mappedBy = "users")
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable
     private Set<Role> roles;
 
     @GenericGenerator(
