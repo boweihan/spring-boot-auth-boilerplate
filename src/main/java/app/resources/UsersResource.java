@@ -80,7 +80,7 @@ public class UsersResource {
         user.setName(userDTO.getName());
         user.setEmail(userDTO.getEmail());
         user.setPassword(userDTO.getPassword());
-        user.setEnabled(userDTO.isEnabled());
+        user.setEnabled(true);
 
         Set<Role> roles = new HashSet<>();
         roles.add(roleDAOInterface.findByName("user"));
