@@ -7,8 +7,7 @@ and when you become a good planner, you save your life from stress!”</i>
 <h1>basic-spring-boot-server</h1>
 <b>basic-spring-boot-server</b> presents an opioninated implementation of
 a generic Java backend. The purpose is to provide a groundwork on which real ideas
-and applications can be prototyped at break-neck speed. Think of <b>basic-spring-boot-server</b>
-as a base infrastructure on which you can add YOUR custom business logic.
+and applications can be prototyped.
 <br/>
 <br/>
 <h2>What's Included?</h2>
